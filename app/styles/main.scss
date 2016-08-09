@@ -1,6 +1,7 @@
 // bower:scss
 @import "customVariables";
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "../../bower_components/normalize-css/normalize.css";
 @import "custom";
 
 // endbower
@@ -9,3 +10,4 @@
 
 @import "blocks/body";
 @import "blocks/header-page";
+@import "blocks/text";
