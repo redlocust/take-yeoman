@@ -1,0 +1,64 @@
+.header-page {
+  max-width: 1920px;
+  min-height: 350px;
+  background: url('../images/page-header-bg.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+
+  @media (min-width: $screen-sm-min) {
+    min-height: 950px;
+  }
+
+  &__inner {
+    padding: 0 10px;
+  }
+
+  &__logo {
+    padding-top: 53px;
+    margin-bottom: 150px;
+    display: block;
+
+    @media (min-width: $screen-sm-min) {
+      margin-bottom: 350px;
+    }
+  }
+
+  &__content {
+    max-width: 500px;
+    color: white;
+    font-family: $font-family-base ;
+  }
+
+  &__title {
+    font-size: 60px;
+    font-weight: 300;
+    line-height: $line-height-base;
+  }
+
+  &__text {
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  &__device {
+    display: block;
+    width: 716px;
+    height: 918px;
+    margin-top: -170px;
+    position: absolute;
+    background: url('../images/page-header-device.png') no-repeat;
+    background-size: cover;
+    z-index: 99999;
+  }
+
+  &__screen {
+    position: absolute;
+    top: 95px;
+    left: 375px;
+    width: 254px;
+    height: 665px;
+    background: url('../images/page-header-screen.png') no-repeat scroll;
+    background-size: cover;
+  }
+}
