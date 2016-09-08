@@ -1,0 +1,15 @@
+.title {
+  color: #222626;
+  line-height: $line-height-base;
+  font-weight: 300;
+
+  &--small {
+    font-size: 35px;
+  }
+
+  &--big {
+    font-weight: 300;
+    font-size: 60px;
+    letter-spacing: -0.06em;
+  }
+}

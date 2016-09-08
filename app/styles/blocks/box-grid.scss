@@ -1,0 +1,78 @@
+.box-grid {
+  padding-top: 85px;
+  color: $white;
+
+  &__inner {
+    @extend .container;
+    @include clearfix;
+  }
+
+  &__items-row {
+
+  }
+
+  &__item {
+    @include make-lg-column(4);
+
+    min-height: 280px;
+    padding: 40px;
+
+    &--big {
+      @include make-lg-column(8);
+      padding-right: 265px;
+      min-height: 280px;
+    }
+
+    &:nth-child(1) {
+      background-color: #f5989d;
+    }
+
+    &:nth-child(2) {
+      background-color: #615f7d;
+    }
+
+    &:nth-child(3) {
+      background-image: url('../images/box-grid-1.jpg');
+      background-position: center center;
+      background-size: cover;
+    }
+
+    &:nth-child(4) {
+      background-image: url('../images/box-grid-2.jpg');
+      background-position: center center;
+      background-size: cover;
+    }
+
+    &:nth-child(5) {
+      background-color: #82ca9c;
+    }
+  }
+
+
+  &__title {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 25px;
+  }
+
+  &__text {
+    font-size: 13px;
+    line-height: 24px;
+    margin-bottom: 25px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $white;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+
+    &:hover {
+      text-decoration: none;
+      color: darken($white, 15%);
+    }
+  }
+
+}
+

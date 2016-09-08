@@ -16,7 +16,11 @@
     @include make-lg-column(6);
 
     &--shift-down {
-      padding-top: 145px;
+
+      @media (min-width: $screen-lg-min) {
+        padding-top: 145px;
+      }
+
     }
   }
 
@@ -26,5 +30,6 @@
     color: #959595;
     text-align: left;
   }
+
 }
 
